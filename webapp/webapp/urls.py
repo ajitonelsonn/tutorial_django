@@ -20,9 +20,11 @@ from django.urls import path
 from about import views
 from blog import views as Blog
 from contact import views as Contact
+from login import views as Login_View
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.index, name='index'),
     path("blog/", Blog.blog, name='blog'),
     path("contact/", Contact.contact, name='contact'),
+    path("login/", Login_View.login_views, name='login'),
 ]
